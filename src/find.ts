@@ -8,6 +8,9 @@ const main = async () => {
     where: {
       id: 16,
     },
+    select: {
+      title: true,
+    }
   });
   const findUnique = prisma.post.findUnique({
     where: {
